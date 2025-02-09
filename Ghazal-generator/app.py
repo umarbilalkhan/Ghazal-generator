@@ -12,7 +12,7 @@ TOKENIZER_PATH = "Ghazal-generator/tokenizer.pkl"
 
 # Load the trained model (check if it exists first)
 if os.path.exists(MODEL_PATH):
-    model = tf.keras.models.load_model(MODEL_PATH)
+    model = tf.keras.models.load_model("urdu_poetry_model.h5", compile=False)
 else:
     st.error(f"Model file '{MODEL_PATH}' not found. Please upload it.")
     model = None
