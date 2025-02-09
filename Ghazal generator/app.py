@@ -50,12 +50,12 @@ def generate_poetry(seed_text, next_words=20, temperature=1.0, num_lines=1):
 
 # Streamlit interface
 st.title('Urdu Poetry Generation')
-st.write("Enter a seed text, specify the number of words, temperature, and the number of lines.")
+st.write("Enter a stanza, specify the number of words, temperature, and the number of lines.")
 
 # Inputs from the user
-seed_text = st.text_input('Seed Text', 'ahmed')  # Default seed text
+seed_text = st.text_input('Enter first stanza')  # Default seed text
 next_words = st.number_input('Number of Words per Line', min_value=1, value=10)  # Default 10 words per line
-temperature = st.slider('Temperature', 0.1, 2.0, 1.0, 0.1)  # Default temperature is 1.0
+temperature =  1.0 
 num_lines = st.number_input('Number of Lines', min_value=1, value=1)  # Default 1 line
 
 # Button to generate poetry
