@@ -6,7 +6,7 @@ import pickle  # To load the tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Paths to model and tokenizer
-MODEL_PATH = "Ghazal-generator/urdu_poetry_model.h5"
+MODEL_PATH = "/Ghazal-generator/urdu_poetry_model.h5"
 TOKENIZER_PATH = "Ghazal-generator/tokenizer.pkl"
 
 
